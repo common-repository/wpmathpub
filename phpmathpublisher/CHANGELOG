@@ -1,0 +1,16 @@
+version 0.4 : a code fork by Ron Fredericks at BiophysicsLab.com 
+- prior version 0.3 had PHP fatal errors and warnings when running on PHP 7. ereg() replaced by preg_match() and 
+__construct constructor function added to classes.
+version 0.3 :
+- The image caching system has been improved. The png images corresponding to the formulas are now generated only once. The vertical alignment parameter is now recorded in the image file name and does not need more to be recomputed each time.
+- WARNING : the $dirfonts and $dirimg parameters should not be finished any more by /.
+Example : you must use 
+$dirfonts=$_SERVER["DOCUMENT_ROOT"]."/phpmathpublisher/fonts";
+instead of
+$dirfonts=$_SERVER["DOCUMENT_ROOT"]."/phpmathpublisher/fonts/";
+
+version 0.2 :
+A "tabular" command has been added. The help about the mathematical syntax has been improved.
+
+version 0.1 :
+Initial release.
